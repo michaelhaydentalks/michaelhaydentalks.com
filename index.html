@@ -206,17 +206,18 @@
   <div class="hero-media">
 
 
-    
-
-      <a href="video/2nd+Sunday+in+Ordinary+Time+-+Yr+C+-+The+divinity+of+Jesus+shines+forth-1642291200" class="latest-video-hero"><span class="newest-label pulse"><i class="fas fa-star"></i>&nbsp;new</span><img src="/src/img/r-opt-20220116-0.jpg"><h2>2nd Sunday in Ordinary Time - Yr C - The divinity of Jesus shines forth</h2></a>
 
 
-    
+    <a href="video/2nd+Sunday+in+Ordinary+Time+-+Yr+C+-+The+divinity+of+Jesus+shines+forth-1642291200" class="latest-video-hero"><span class="newest-label pulse"><i class="fas fa-star"></i>&nbsp;new</span><img src="/src/img/r-opt-20220116-0.jpg"><h2>2nd Sunday in Ordinary Time - Yr C - The divinity of Jesus shines forth</h2></a>
+
+
+
   </div>
 
   <div class="hero-text">
     <h1>Michael Hayden</h1>
-    <p>Follow Michael as we explore the message given to us by Christ and enshrined in the Scriptures.<br><sub>(New videos weekly <i class="fas fa-asterisk"></i>)</sub></p>
+    <p>Follow Michael as we explore the message given to us by Christ and enshrined in the Scriptures.<br><sub>(New
+        videos weekly <i class="fas fa-asterisk"></i>)</sub></p>
     <div class="desktop-only hero-cta-org">
       <a class="btn btn-sec" href="/video/Introduction+Video-1604102400"><i class="fas fa-play"></i>&nbsp;Intro</a>
       <a class="btn btn-pri" id="goToLibrary" href="#carousel"><i class="fas fa-arrow-down"></i>&nbsp;Browse</a>
@@ -242,31 +243,45 @@
       <i style='background-image:url(/src/img/r-opt-20211225-0.jpg);' loading='lazy'></i><h2>The Feast of the Nativity of the Lord - Christmas Day - Yr C - "All the ends of the earth shall see the salvation of our God"</h2><span class='created'>Saturday 25<sup>th</sup> Dec 2021</span></a><a href='/video/4th+Sunday+of+Advent+-+Yr+C+-+%22The+moment+your+greeting+reached+my+ears%2C+the+child+leapt+for+joy%22-1639872000'>
       <i style='background-image:url(/src/img/r-opt-20211218-0.jpg);' loading='lazy'></i><h2>4th Sunday of Advent - Yr C - "The moment your greeting reached my ears, the child leapt for joy"</h2><span class='created'>Sunday 19<sup>th</sup> Dec 2021</span></a><a href='/video/3rd+Sunday+of+Advent+-+Yr+C+-+Gaudete+Sunday+%22Let+us+rejoice+as+the+Lord+draws+near%22-1639267200'>
       <i style='background-image:url(/src/img/r-opt-20211211-0.jpg);' loading='lazy'></i><h2>3rd Sunday of Advent - Yr C - Gaudete Sunday "Let us rejoice as the Lord draws near"</h2><span class='created'>Sunday 12<sup>th</sup> Dec 2021</span></a><a href='/video/Feast+of+the+Immaculate+Conception+-+C+-+%22Mary+do+not+be+afraid%3B+you+have+won+God%E2%80%99s+favour%22-1638921600'>
-      <i style='background-image:url(/src/img/r-opt-20211208-0.jpg);' loading='lazy'></i><h2>Feast of the Immaculate Conception - C - "Mary do not be afraid; you have won God’s favour"</h2><span class='created'>Wednesday 8<sup>th</sup> Dec 2021</span></a></div><!-- file:0 count:9 reverseCounting:12 --></div><!-- January 17 2022 14:31:45 -->
+      <i style='background-image:url(/src/img/r-opt-20211208-0.jpg);' loading='lazy'></i><h2>Feast of the Immaculate Conception - C - "Mary do not be afraid; you have won God’s favour"</h2><span class='created'>Wednesday 8<sup>th</sup> Dec 2021</span></a></div><!-- file:0 count:9 reverseCounting:12 --></div><!-- January 17 2022 14:46:58 -->
 
 <a id="loadMoreBtn" class="btn btn-pri">...</a>
 
 <script>
-  if(document.getElementById("loadMoreBtn")){
-    document.getElementById("loadMoreBtn").addEventListener('click', carousel)
+  if (document.getElementById("loadMoreBtn")) {
     fetch('/carousel/videos.json', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'multipart/form-data',
-        },
+      method: 'GET',
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
     })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data)
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-        });
+      .then((response) => response.json())
+      .then((data) => {
+        window.videos = data;
+        // prepareButton
+        if (window.videos.length > 9) {
+          window.videoCount = 9;
+          document.getElementById("loadMoreBtn").addEventListener('click', carousel)
+          document.getElementById("loadMoreBtn").innerHTML = "More meditations"
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }
-  function carousel(){
-
+  function carousel() {
+    for(i=window.videoCount-1; i<window.videoCount+8; i++){
+      let link = document.createElement="a"
+      link.href = window.videos[window.videoCount].url
+      let thumbnail = window.videos[window.videoCount].thumbnail
+      let name = window.videos[window.videoCount].name
+      let created = window.videos[window.videoCount].created
+      link.innerHTML = `<i style="background-image:url(/src/${thumbnail});" loading="lazy"></i><h2>${name}</h2><span class="created">${created}</span></a>`;
+      document.getElementById("carousel").append(link)
+    }
   }
-</script></div>
+</script>
+</div>
     <div id="pageEnd"></div>
     <div class="footer">
       <p>Website built with <i class="fas fa-heart" style="color:var(--crimson)"></i></p>
