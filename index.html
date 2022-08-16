@@ -251,7 +251,7 @@
       <i style='background-image:url(/src/img/r-opt-20220808-0.jpg);' loading='lazy'></i><h2>Saint Dominic De Guzman - Founder of the Order of Preachers</h2><span class='created'>Monday 8<sup>th</sup> Aug 2022</span></a><a href='/video/19th+Sunday+in+Ordinary+Time+-+Yr+C+-+Stand+and+be+ready-1659830400'>
       <i style='background-image:url(/src/img/r-opt-20220807-0.jpg);' loading='lazy'></i><h2>19th Sunday in Ordinary Time - Yr C - Stand and be ready</h2><span class='created'>Sunday 7<sup>th</sup> Aug 2022</span></a><a href='/video/St+John+Mary+Vianney+-+If+we+do+not+offer+what+we+do+to+God-+it+is+wasted-1659571200'>
       <i style='background-image:url(/src/img/r-opt-20220804-0.jpg);' loading='lazy'></i><h2>St John Mary Vianney - If we do not offer what we do to God- it is wasted</h2><span class='created'>Thursday 4<sup>th</sup> Aug 2022</span></a><a href='/video/18th+Sunday+in+Ordinary+Time+-+Yr+C+-+A+persons+life+does+not+consist+of+possessions-1659225600'>
-      <i style='background-image:url(/src/img/r-opt-20220730-0.jpg);' loading='lazy'></i><h2>18th Sunday in Ordinary Time - Yr C - A persons life does not consist of possessions</h2><span class='created'>Sunday 31<sup>st</sup> Jul 2022</span></a></div><!-- file:0 count:6 reverseCounting:25 --></div><!-- August 16 2022 14:37:42 -->
+      <i style='background-image:url(/src/img/r-opt-20220730-0.jpg);' loading='lazy'></i><h2>18th Sunday in Ordinary Time - Yr C - A persons life does not consist of possessions</h2><span class='created'>Sunday 31<sup>st</sup> Jul 2022</span></a></div><!-- file:0 count:6 reverseCounting:25 --></div><!-- August 16 2022 14:43:41 -->
 
 <br><br>
 <a id="loadMoreBtn" class="btn btn-pri">...</a>
@@ -287,8 +287,15 @@
   function getCarouselRowCapacity(){
     let carouselWidth = document.getElementById("carousel").getBoundingClientRect().width
     let tileWidth = 280
-    let rowCapacity = Math.floor(carouselWidth/tileWidth)
-    rowCapacity = carouselWidth/(((rowCapacity-1)*50)+(rowCapacity*tileWidth))
+    let expansion = 0
+    let rowCapacity = 0
+    for (let i=0; i<carouselWidth; i++){
+      expansion=expansion+tileWidth+((i-1)*50)
+      if(expansion>carouselWidth){
+        rowCapacity = i-1
+        break
+      }
+    }
     return rowCapacity
   }
   function carousel() {
