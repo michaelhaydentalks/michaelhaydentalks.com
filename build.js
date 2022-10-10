@@ -279,6 +279,7 @@ function consolidateAssets() {
       }
     }
 
+    fs.copyFileSync("./src/img/favicon.svg", "./dist/src/img/favicon.svg");
     fs.copyFileSync("./src/img/favicon.png", "./dist/src/img/favicon.png");
 
     // if (ext === '.css') {
