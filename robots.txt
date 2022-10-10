@@ -1,0 +1,8 @@
+
+User-agent: *
+Disallow: /src/
+
+User-agent: Googlebot
+Allow: /src/
+
+Sitemap: https://michaelhaydentalks.com/sitemap.xml
