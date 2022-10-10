@@ -165,7 +165,7 @@ function makeVideoPages(obj, next) {
   head = head.replace(/\$title/g, titlify(obj.name))
   head = head.replace(/\$site/g, variables.site)
   head = head.replace(/\$canonical/g, variables.site + '/' + uri)
-  head = head.replace(/\$metaImage/g, thumb)
+  head = head.replace(/\$metaImage/g, variables.site + "/src/img/" + path.parse(obj.thumbnail).name + ".webp")
   dist += head
   let nav = String(fs.readFileSync('./components/nav.ejs'))
 
