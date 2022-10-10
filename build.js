@@ -164,7 +164,7 @@ function makeVideoPages(obj, next) {
   head = head.replace(/\$name/g, variables.name)
   head = head.replace(/\$title/g, titlify(obj.name))
   head = head.replace(/\$site/g, variables.site)
-  head = head.replace(/\$canonical/g, variables.site + '/' + uri)
+  head = head.replace(/\$canonical/g, variables.site + '/video/' + clean)
   head = head.replace(/\$metaImage/g, variables.site + "/src/img/" + path.parse(obj.thumbnail).name + ".webp")
   dist += head
   let nav = String(fs.readFileSync('./components/nav.ejs'))
@@ -180,7 +180,7 @@ function makeVideoPages(obj, next) {
     .replace(/\$name/g, obj.name)
     .replace(/\$date/g, obj.meta.created)
     .replace(/\$uri/g, uri)
-    .replace(/\$clean/g, clean)
+    .replace(/\$clean/g, '/video/'+clean)
     .replace(/\$next/g, next.name)
     .replace(/\$nxtClean/g, nextClean)
     .replace(/\$thumb/g, thumb)
