@@ -1,0 +1,343 @@
+<style>
+  .valueControlBtn {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    height: 40px;
+    width: 40px;
+    line-height: 45px;
+    color: var(--blue);
+    display: block;
+    border-radius: 60px;
+    margin: auto
+  }
+
+  .demoBlockText {
+    padding: 0 20px;
+    font-size: 12px;
+    color: var(--lg-blue-darker-text)
+  }
+
+  .valueControlBtn i:before {
+    line-height: 30px
+  }
+
+  .payButtonLiveDemoInvoice {
+    margin: 40px auto 40px auto;
+    display: inline-grid;
+    grid-auto-flow: row;
+    width: auto;
+    border: 2px solid var(--light);
+    border-radius: 15px;
+    padding-bottom: 15px
+  }
+
+  .payButtonLiveDemoInvoiceInner {
+    display: flex;
+    flex-flow: wrap
+  }
+
+  .payButtonLiveDemoInvoiceText {
+    margin: 0 auto 0 20px;
+    transform: translateY(-10px);
+    background: var(--background);
+    padding: 0 5px;
+    font-size: 14px;
+    color: var(--text)
+  }
+
+  .GenerateInvoiceButton {
+    margin: auto;
+    text-transform: none !important;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  .GenerateInvoiceButton .fab {
+    font-size: 2rem
+  }
+
+  #valueSelector .finalValue_ {
+    height: 50px;
+    font-size: 25px;
+    margin: auto;
+    border-width: 0px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    padding-left: .5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    background: var(--background-2);
+    color: var(--text);
+    box-shadow: 0px 0px 0px 2px var(--light);
+    border-radius: 10px;
+    max-width: 80vw;
+  }
+
+  .currency_ {
+    list-style: none;
+    height: 50px;
+    border-width: 0;
+    background: var(--lg-blue-darker);
+    padding: 0 5px 0 5px;
+    font-size: 15px;
+    font-family: Faktum-Bold, sans-serif;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    background: var(--background);
+    color: var(--text);
+    border-radius: 10px;
+  }
+  .payButtonLiveDemoInvoiceInner > a > i{
+    transition: .3s ease;
+  }
+.payButtonLiveDemoInvoiceInner > a > i:hover{
+  transform: translateY(-2px);
+}
+</style>
+
+
+<div id="donationModuleMaster">
+  <div class="donationHolderInner">
+    <div id="jsInvoiceWorkspacePre">
+      <h1>Support Michael with a donation</h1>
+      <div id="valueSelectorHolder">
+        <div id="valueSelector">
+          <input class="finalValue_" value="20.00" type="text" placeholder="20.00"
+            oninput="adjustValue('verify', event, this)" onchange="adjustValue('verify', event, this)" />
+          <select class="currency_" onchange="setCurrency(this);">
+            <option value="ttd">TTD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="usd">USD</option>
+            <option value="btc">BTC</option>
+          </select>
+        </div>
+      </div>
+      <div class="payButtonLiveDemoInvoice">
+        <span class="payButtonLiveDemoInvoiceText">Donate using...</span>
+        <div class="payButtonLiveDemoInvoiceInner">
+          <a title="Bitcoin (BTC)" class="GenerateInvoiceButton pw-bc" onclick="genInvoice_(this)">
+            <i class="fab fa-bitcoin"></i></a>
+          <a title="Cards and Mobile Wallets" class="GenerateInvoiceButton pw-cc" onclick="makeStripeInvoice()">
+            <i class="fab fa-cc-visa"></i>&nbsp;
+            <i class="fab fa-cc-mastercard"></i>&nbsp;
+            <i class="fab fa-cc-amex"></i>&nbsp;
+            <i class="fab fa-apple-pay"></i>&nbsp;
+            <i class="fab fa-google-wallet"></i>&nbsp;
+          </a>
+        </div>
+      </div>
+      <p>Your kind donations go directly to Michael and are used for the upkeep of this site.</p>
+      <p><sup>*</sup>The content of this site is provided to you <b>free of charge</b>. Please only make a donation if you would like to support Michael in this project. Otherwise, your prayers
+        are payment enough <i class="em em-pray" aria-role="presentation" aria-label="PERSON WITH FOLDED HANDS"></i></p>
+    </div>
+    <div id="statusButton" style="display:none;" class="card-body">
+      <svg version="1.1" class="spinnerAnimated" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="283.46px" height="283.46px"
+        viewBox="0 0 283.46 283.46" enable-background="new 0 0 283.46 283.46" xml:space="preserve">
+        <circle fill="none" stroke="var(--primary)" stroke-width="30" stroke-linecap="round" stroke-miterlimit="10"
+          cx="141.73" cy="141.73" r="106.762" /></svg>
+      <p class="genIn_">Getting things ready...</p>
+    </div>
+    <div id="jsInvoiceWorkspace" style="display:none;" class=""></div>
+  </div>
+</div>
+
+<script>
+  var wkCur_, ivFr_, frWtr_, ckWr_, ivFr_Doc, val_, ifSD_, storeId = "5YkEVkfOtOoWUcIdg2bHdIFuUlAMnzO0Zk2SVjU0dFTjgt0PXO6frvokZslZpWcLM3YmwM5Vuik03d4tk4Hd2Hna1EgrZTJIyAT5G4sSTbYpVHKpaGRpB5Ptl2ne9bIWWsiDrJqC0IJeeyVDFPmU1lj6qyLd6d504uDNCb12Sw8LelQTcPKspBKJZfNNiPyT2LDUvOAWYIrqzynX7f0IAnMiJl0dETCzSWT25Ks4VEmPy25rZuwOAU8i8UzDfAk9fKa9vGP8RCraWyVl8zhonOZpcL7mhx3Qkzls0CB0rbxaAymPNibzMZ6libJgsu8m4UkBisGmnT2Ly1lQkV2apjQPmb1Ft9NGvZ5TZMECOjn2TXoIDK5FqGZWW8hefOyLqtqkgjKZGs3Ew74PHB6SMk94GSnsb0DLsX4ERPa3QuebeS6z5HjrdnALTb35KtD28V9Vb6n3zCh68gTbFnNl85DNywhBJGJRj3JwAB7WColLQVKMDECoV4rMdNmQwSJf",
+    storeURL = "money.flat18.co.uk/api/v1/invoices/";
+
+
+  function makeStripeInvoice() {
+
+    document.getElementById("jsInvoiceWorkspacePre").style.display = "none", document.getElementById("statusButton").style.display = "block", wkCur_ = wkCur_ || "USD";
+    var e = "USD";
+    var v = val_ && val_ * 100 >= 100 ? parseFloat(val_ * 100) : 100;
+    var sessionID;
+
+    if (!document.getElementById('stripe_0')) {
+      var script = document.createElement('script');
+      script.id = 'stripe_0';
+      script.src = 'https://js.stripe.com/v3/stripe.js';
+      document.head.appendChild(script);
+    }
+    var t = new XMLHttpRequest;
+    t.open("POST", "https://api.flat18.co.uk/payments/receive-stripe-payment.php?keyIdentity=https://michaelhaydentalks.com"), t.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), t.onload = function () {
+      200 === t.status && t.responseText.length < 1 ? console.log("error: " + t.responseText) : 200 !== t.status ? console.log("failed: " + t.status) : sessionID = JSON.parse(t.responseText).id;
+
+      try {
+        var stripe = Stripe('pk_live_51HjYQvH2UBrtKYUGcgG8P8pdYrmGPyJJVBMin5APoStOoiDl1qMEwR9f5dZYZ7q5ojK3I0zyjI99bpcdq3tRwg7C00fgE8rGpu');
+        stripe.redirectToCheckout({
+          sessionId: sessionID
+        }).then(function (result) { });
+      } catch (e) {
+        alert("Sorry. Let's start over. Please refresh this page.");
+        window.location = "/donate";
+      }
+
+
+    }, t.send(encodeURI("v=" + v + "&c=" + wkCur_))
+
+
+  }
+
+  function genInvoice_(e) {
+    if (document.getElementById("jsInvoiceWorkspacePre").style.display = "none", document.getElementById("statusButton").style.display = "block", wkCur_ = wkCur_ || "EUR", !ivFr_) {
+      var t = val_ || 1;
+      var d_typ = window.d_typ ? window.d_typ : "donation";
+      d_typ = d_typ + "michaelhaydentalks.com";
+      var d_det = window.psSes ? window.psSes : "N/A";
+      var btcpay_wkCur_ = wkCur_ !== 'ttd' ? wkCur_ : 'usd';
+      var t_ = wkCur_ !== 'ttd' ? t : t / 6.8;
+      (ivFr_ = document.createElement("iframe")).style.border = "none", ivFr_.setAttribute("onLoad", "window.informOfProgress(event, this)"), ivFr_.setAttribute("srcdoc", '<!doctype html><html><body><form method="GET"  action="https://' + storeURL + '" style="width:0px;height:0px"><input type="hidden" name="store_id" value="' + storeId + '" /><input type="hidden" name="price" value="' + t_ + '" /><input type="hidden" name="browserRedirect" value="https://michaelhaydentalks.com/thanks_for_your_support" /><input type="hidden" name="currency" value="' + btcpay_wkCur_ + '" /><input type="hidden" name="defaultLanguage" value="en" /><input type="hidden" name="orderId" value="' + d_typ + ' | ' + d_det + '" /><input type="image" src="" name="submit"></form></body></html>'), ivFr_.style.height = "0px", ivFr_.style.width = "0px", ivFr_.style.visibility = "hidden", document.getElementById("jsInvoiceWorkspace").appendChild(ivFr_)
+    }
+    watchFrameChange("btcpay")
+  }
+
+  function watchFrameChange(e, t) {
+    var n = "btcpay" === e ? 1 : 0,
+      o = "btcpay" === e ? 2 : 1;
+    frWtr_ = setInterval(function () {
+      var e = document.getElementById("jsInvoiceWorkspace").querySelector("iframe");
+      ifSD_ == o && (clearInterval(frWtr_), setTimeout(function () {
+        var n = t || 720;
+        n = n >= screen.height * 0.8 ? screen.height * 0.8 : n;
+        document.getElementById("jsInvoiceWorkspace").style.display = "block", document.getElementById("statusButton").style.display = "none", e.style.height = n + "px", document.getElementById("jsInvoiceWorkspace").style.height = n + "px", e.style.width = "100%", e.style.visibility = "visible"
+      }, 300)), ifSD_ == n && (ckWr_ || (ivFr_Doc = e.contentDocument).querySelector("form") && (ivFr_Doc.querySelector("form").submit(), ckWr_ = 1))
+    }, 500)
+  }
+
+  function startDonation() {
+    document.getElementById("valueSelector").querySelector("input").value = 20;
+    document.getElementById("valueSelector").querySelector(".currency_").selectedIndex = 0;
+    val_ = document.getElementById("valueSelector").querySelector("input").value;
+    wkCur_ = document.getElementById("valueSelector").querySelector(".currency_").value;
+    document.getElementById("donationModuleMaster").style.display = "grid";
+    var t = "donate";
+    lastOpenedPageName = t;
+    history.pushState({page:1}, t, t)
+  }
+
+  function cancelDonation(e) {
+    document.getElementById("donationModuleMaster").style.display = "none", document.getElementById("statusButton").style.display = "none", document.getElementById("jsInvoiceWorkspacePre").style.display = "block", ivFr_ = void 0, ckWr_ = void 0, document.getElementById("jsInvoiceWorkspace").style.display = "none", document.getElementById("jsInvoiceWorkspace").innerHTML = "", ifSD_ = 0;
+    var t = window.location.href.replace("/donate", "");
+    history.pushState(n, t, t)
+  }
+
+  function adjustValue(e, t, n) {
+    var o = document.querySelectorAll(".finalValue_")[0].value.length > 0 ? document.querySelectorAll(".finalValue_")[0].value : document.querySelectorAll(".finalValue_")[0].getAttribute("value");
+
+    if (isNaN(val_) == false) {
+      if (val_[val_.length - 1] === '.') { val_ = Number(String(val_) + "0"); } else {
+        val_ = Number(o).toFixed(2);
+      }
+    }
+
+
+    if (isNaN(val_) != false) {
+      n.outerHTML = '<input class="finalValue_" value="1" type="text" placeholder="1" onkeyup="adjustValue(\'verify\', event, this)" onchange="adjustValue(\'verify\', event, this)"/>';
+      val_ = 1;
+    }
+
+    setCurrency({ value: wkCur_ });
+  }
+
+  function setCurrency(e) {
+    wkCur_ = e.value;
+    switch (wkCur_) {
+      case 'ttd':
+        if (val_ < 5) {
+          val_ = 5;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+        break;
+      case 'usd':
+        if (val_ < 0.5) {
+          val_ = 0.5;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+        break;
+      case 'eur':
+        if (val_ < 0.5) {
+          val_ = 0.5;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+        break;
+      case 'gbp':
+        if (val_ < 0.5) {
+          val_ = 0.5;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+        break;
+      default:
+        if (val_ < 5) {
+          val_ = 5;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+        if (val_ > 10000) {
+          val_ = 10000;
+          document.querySelectorAll(".finalValue_")[0].value = val_;
+        }
+    }
+  }
+
+  function smarterHistoryManagement(e) {
+    try {
+      var l = (window.location.href).replace("https://", "").replace("michaelhaydentalks.com", "").split("/");
+      n = String(l[1]);
+      n.length > 0 && (console.log(n));
+
+      n = n.length < 2 ? "donate" : n;
+
+      switch (n) {
+        case "donate":
+          startDonation();
+          break;
+        case "thanks_for_your_support":
+          beThankful();
+          break;
+        default:
+          if (n.length > 1) {
+            var i = n.replace(/#/g, "");
+            if (document.getElementById(i) && document.getElementById(i).length > 0) {
+              scrDirect(i);
+            } else {
+              openPage({}, i);
+            }
+
+          } else {
+          }
+
+      }
+    } catch (e) { console.log(e) }
+
+
+  }
+
+  function beThankful() {
+    window.EndThanks = setTimeout(function () { closePage(); }, 8000);
+    window.EndThanks;
+  }
+
+  ifSD_ = 0, window.informOfProgress = function (e, t) {
+    ifSD_++;
+    try {
+      "about:srcdoc" === t.contentWindow.location.href && ifSD_ >= 3 && (window.location = "/")
+    } catch (e) {
+      console.log(e)
+    }
+    ifSD_ >= 3 && cancelDonation(), console.log("Debug: frame stage: " + ifSD_)
+  }
+
+  startDonation();
+</script>

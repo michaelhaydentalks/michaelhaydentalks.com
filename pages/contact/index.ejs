@@ -1,0 +1,108 @@
+<style>
+  .form-group {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
+    margin: 3rem auto 0 auto;
+  }
+
+  .form-group:first-of-type{
+    margin: 1rem auto 0 auto;
+  }
+
+  input,
+  textarea {
+    background: var(--background-2);
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px var(--dark);
+    padding: 1rem;
+    font-family: 'Fira Code', 'Courier New', monospace, "Font Awesome 5 Free";
+    color: var(--text);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--text);
+    font-family: 'Fira Code', 'Courier New', monospace, "Font Awesome 5 Free";
+    font-style: italic;
+  }
+
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    color: transparent;
+  }
+
+  label {
+    font-weight: 800;
+    background: -webkit-linear-gradient(60deg, var(--crimson), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  #submit-button {
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  #contact-form {
+    max-width: 600px;
+  }
+  .accordian-payload.open #contact-form {
+    width: calc(90vw - 4rem);
+  }
+
+  @media (max-width:700px) {
+    #contact-form {
+      margin: auto;
+    }
+  }
+
+</style>
+
+<h1>Say hi <i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></h1>
+<a class="btn btn-pri btn-lg" target="_blank" href="mailto:hello@michaelhaydentalks.com?subject=Web Contact&body=Hi Michael..."><i class="fas fa-envelope" aria-role="presentation" aria-label="ENVELOPE"></i>&nbsp;<b>hello</b>@michaelhaydentalks.com</a>
+<br><br>
+
+<a class="btn btn-pri btn-lg" target="_blank" href="https://wa.me/353873186174"><i class="fab fa-whatsapp"></i> &nbsp;Whatsapp Michael</a>
+<br><br>
+
+
+<a class="btn btn-pri btn-lg" target="_blank" href="https://www.facebook.com/michaelhaydentalks"><i class="fab fa-facebook"></i> &nbsp;MHT Facebook</a>
+<br><br>
+
+
+<sub>For privacy information check out our <a href="/privacy">Privacy Policy</a>.</sub>
+
+
+
+<!-- <form method="POST" action="/capture" id="contact-form">
+  <input type="hidden" name="_token" value="v1nPS1u5aWLdwkSDvXsw9EHw21sNkgwQ4mwfVhSu">
+  <div class="form-fields">
+
+    <div class="form-group">
+      <label>Your Name (optional)</label>
+      <input placeholder="Sam Lemonzest" type="text" name="name" value="" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Contact (optional)</label>
+      <input placeholder="mail@example.com / +353 87 123 6549" type="text" name="contact" value="" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Type a message..." name="message" class="form-control" rows="7" required=""></textarea>
+    </div>
+
+    <div class="form-group -agree-to-terms">
+      <label>Agree to Terms</label>
+      <input name="agree-terms-conditions" class="form-control" type="checkbox">
+    </div>
+
+  </div>
+  <button id="submit-button" class="btn btn-pri btn-lg">Send&nbsp;<i class="fas fa-paper-plane"></i></button>
+</form> -->
