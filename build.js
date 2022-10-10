@@ -103,6 +103,9 @@ function makePage(directory) {
     reCreateFolders('./dist/' + directory)
   }
   dist = directory === 'homepage' ? modifyHomepage(dist) : dist
+  if (directory === '404') {
+    fs.writeFileSync('./dist/404.html', dist);
+  }
   fs.writeFileSync('./dist' + subDirectory + 'index.html', dist);
 
 }
