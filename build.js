@@ -213,7 +213,7 @@ function makeVideoPages(obj, next) {
         //file exists
       }
     } catch (err) {
-        webp.cwebp("./" + obj.thumbnail, thumb, "-q 5", logging = "-v");
+        webp.cwebp("./" + obj.thumbnail, thumb, "-q 1", logging = "-v");
         console.log('...image being compressed for: ' + obj.name)
     }
     fs.copyFileSync(thumb, "./dist/src/img/" + path.parse(obj.thumbnail).name + ".webp");
