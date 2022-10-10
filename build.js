@@ -67,6 +67,7 @@ function makePage(directory) {
   head = head.replace(/\$title/g, titlify(directory))
   head = head.replace(/\$site/g, variables.site)
   head = head.replace(/\$canonical/g, variables.site + '/' + directory)
+  head = head.replace(/\$metaImage/g, variables.site + '/src/img/Thunb.webp')
   dist += head
   let nav = String(fs.readFileSync('./components/nav.ejs'))
 
@@ -157,19 +158,20 @@ function makeVideoPages(obj, next) {
   const fs = require('fs')
   let uri = encodeURI(obj.name)
   let clean = cleanDirURL(obj)//.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~")
+  let thumb = obj.thumbnail?"./src/img/" + path.parse(obj.thumbnail).name + ".webp":''
   let dist = ''
   let head = String(fs.readFileSync('./components/head.ejs'))
   head = head.replace(/\$name/g, variables.name)
   head = head.replace(/\$title/g, titlify(obj.name))
   head = head.replace(/\$site/g, variables.site)
   head = head.replace(/\$canonical/g, variables.site + '/' + uri)
+  head = head.replace(/\$metaImage/g, thumb)
   dist += head
   let nav = String(fs.readFileSync('./components/nav.ejs'))
 
   let bodyWrapper = String(fs.readFileSync('./components/body-wrapper.ejs'))
   let videoUIWrapper = String(fs.readFileSync('./components/video-page/video-ui.ejs'))
   let description = obj.details?.path ? fs.readFileSync('./components/video-descriptions/' + obj.details.path + '.ejs') : ''
-  let thumb = obj.thumbnail?"./src/img/" + path.parse(obj.thumbnail).name + ".webp":''
 
   let nextClean = cleanDirURL(next)//.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~")
   videoUIWrapper = videoUIWrapper.replace(/\$site/g, variables.site)
@@ -276,6 +278,9 @@ function consolidateAssets() {
         fs.writeFileSync(dir.replace("./", "./dist/") + ass, read(dir + ass));
       }
     }
+
+    fs.copyFileSync("./src/img/favicon.png", "./dist/src/img/favicon.png");
+
     // if (ext === '.css') {
     //   // data = await postcss([cssnano, autoprefixer]).process(data, { from: undefined })
     //   postcss([cssnano]).process(data, { from: false }).then((result) => {
