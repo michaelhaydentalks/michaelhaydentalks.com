@@ -2600,5 +2600,21 @@
     "meta": {
       "created": "9th October 2022"
     }
+  },
+  {
+    "name": "Saint Pope John XXIII - Angelo Giuseppe Roncalli",
+    "thumbnail": "/src/img/20221011-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "758938093",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221011-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "11th October 2022"
+    }
   }
 ]
