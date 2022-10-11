@@ -17,7 +17,7 @@ function read(file) {
 function reCreateFolders(folder) {
   const fs = require('fs')
   folder = folder ? folder : '/dist'
-  if (fs.existsSync(folder)) { fs.rmdirSync(folder, { recursive: true }) }
+  if (fs.existsSync(folder)) { fs.rmSync(folder, { recursive: true }) }
   fs.mkdirSync(folder)
 }
 
@@ -25,11 +25,11 @@ function cleanDirURL(obj) {
   const months = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" }
   //CONVERT DD MM YYYY to ISO
   let dateStr = obj.meta.created.split(" ")
-  let day = dateStr[0].replace(/\D/g, '')>9? dateStr[0].replace(/\D/g, '') : String("0" + dateStr[0].replace(/\D/g, ''))
+  let day = dateStr[0].replace(/\D/g, '') > 9 ? dateStr[0].replace(/\D/g, '') : String("0" + dateStr[0].replace(/\D/g, ''))
   dateStr = `${dateStr[2]}-${months[dateStr[1].toLowerCase()]}-${day}T00:00:00.00Z`
-  dateStr = new Date(dateStr)/1000
+  dateStr = new Date(dateStr) / 1000
   return obj.name.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~") + "-" + dateStr
-  
+
 }
 
 
@@ -117,18 +117,18 @@ function modifyHomepage(dist) {
   let json = videoMaster[videoMaster.length - 1]
 
   let clean = cleanDirURL(json)//.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~")
-  let thumb = json.thumbnail?"/src/img/" + path.parse(json.thumbnail).name + ".webp":''
+  let thumb = json.thumbnail ? "/src/img/" + path.parse(json.thumbnail).name + ".webp" : ''
 
   let latest = `<a href="video/${clean}" class="latest-video-hero"><span class="newest-label pulse"><i class="fas fa-star"></i>&nbsp;new</span><img src="${thumb}"><h2>${json.name}</h2></a>`
 
   let max = videoMaster.length < 12 ? videoMaster.length : 12
   let videoMasterReversed = videoMaster.reverse()
   let carousel = `<script>window.carouselCount=${max};</script>`
-  for (i = 0; i < max; i++){
+  for (i = 0; i < max; i++) {
     let j = videoMasterReversed[i]
     let t = j?.thumbnail ? '/src/img/' + path.parse(j.thumbnail).name + '.webp' : ''
     // console.log(j)
-    let zeroth = i==0?`<span class='newest-label pulse'><i class='fas fa-star'></i>&nbsp;new</span>`:''
+    let zeroth = i == 0 ? `<span class='newest-label pulse'><i class='fas fa-star'></i>&nbsp;new</span>` : ''
     carousel += `<a href='/video/${cleanDirURL(j)}'>
       <i style='background-image:url(${t});' loading='lazy'></i>${zeroth}<h2>${j.name}</h2><span class='created'>${j.meta.created}</span></a>`
   }
@@ -147,7 +147,7 @@ function videoMaster() {
   for (const obj of videoMaster) {
     let next = videoMaster?.[count + 1] || videoMaster[0]
     makeVideoPages(obj, next)
-    videoJson.push({name: obj.name, thumbnail: "/src/img/" + path.parse(obj.thumbnail).name + ".webp", created: obj.meta.created, url: cleanDirURL(obj)})
+    videoJson.push({ name: obj.name, thumbnail: "/src/img/" + path.parse(obj.thumbnail).name + ".webp", created: obj.meta.created, url: cleanDirURL(obj) })
     count++
   }
   fs.writeFileSync('./dist/src/json/videos.json', JSON.stringify(videoJson.reverse()));
@@ -159,9 +159,10 @@ function makeVideoPages(obj, next) {
   const path = require('path');
   const webp = require('webp-converter');
   const fs = require('fs')
+  webp.grant_permission();
   let uri = encodeURI(obj.name)
   let clean = cleanDirURL(obj)//.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~")
-  let thumb = obj.thumbnail?"./src/img/" + path.parse(obj.thumbnail).name + ".webp":''
+  let thumb = obj.thumbnail ? "./src/img/" + path.parse(obj.thumbnail).name + ".webp" : ''
   let dist = ''
   let head = String(fs.readFileSync('./components/head.ejs'))
   head = head.replace(/\$name/g, variables.name)
@@ -183,7 +184,7 @@ function makeVideoPages(obj, next) {
     .replace(/\$name/g, obj.name)
     .replace(/\$date/g, obj.meta.created)
     .replace(/\$uri/g, uri)
-    .replace(/\$clean/g, '/video/'+clean)
+    .replace(/\$clean/g, '/video/' + clean)
     .replace(/\$next/g, next.name)
     .replace(/\$nxtClean/g, nextClean)
     .replace(/\$thumb/g, thumb)
@@ -211,15 +212,25 @@ function makeVideoPages(obj, next) {
   fs.writeFileSync('./dist/video/' + clean + '/index.html', dist);
 
   if (obj.thumbnail) {
-    try {
-      if (fs.existsSync(thumb)) {
-        //file exists
-      }
-    } catch (err) {
-        webp.cwebp("./" + obj.thumbnail, thumb, "-q 5", logging = "-v");
-        console.log('...image being compressed for: ' + obj.name)
+    // try {
+    if (fs.existsSync(thumb)) {
+      //file exists
+      // console.log("exists: ", thumb)
+
+      fs.copyFileSync(thumb, "./dist/src/img/" + path.parse(obj.thumbnail).name + ".webp");
+    } else {
+      console.log("no webp for: ." + obj.thumbnail)
+      // webp.cwebp("." + obj.thumbnail, thumb, "-q 5", logging = "-v");
+      const result = webp.cwebp("." + obj.thumbnail, thumb, "-q 5", logging = "-v");
+      result.then((response) => {
+        console.log(response);
+        fs.copyFileSync(thumb, "./dist/src/img/" + path.parse(obj.thumbnail).name + ".webp");
+        console.log('image compressed and saved for: ' + obj.name)
+      });
     }
-    fs.copyFileSync(thumb, "./dist/src/img/" + path.parse(obj.thumbnail).name + ".webp");
+    // } catch (err) {
+    // console.log(err)
+    // }
   }
   let date = new Date()
   // console.log(date)
