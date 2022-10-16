@@ -2632,5 +2632,21 @@
     "meta": {
       "created": "16th October 2022"
     }
+  },
+  {
+    "name": "St Ignatius of Antioch - Let me be food for the beasts_ _they are my way to God",
+    "thumbnail": "/src/img/20221017-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "760680184",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221017-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "17th October 2022"
+    }
   }
 ]
