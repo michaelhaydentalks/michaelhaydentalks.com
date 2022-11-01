@@ -2680,5 +2680,21 @@
     "meta": {
       "created": "30th October 2022"
     }
+  },
+  {
+    "name": "All Saints - Yr C -  Blessed are the poor in spirit, theirs is the kingdom of heaven",
+    "thumbnail": "/src/img/20221101-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "765937206",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221101-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "1st November 2022"
+    }
   }
 ]
