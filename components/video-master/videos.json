@@ -2696,5 +2696,21 @@
     "meta": {
       "created": "1st November 2022"
     }
+  },
+  {
+    "name": "Commemoration of all the Faithful - Yr C - Do not let your hearts be troubled",
+    "thumbnail": "/src/img/20221102-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "766308494",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221102-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "2nd November 2022"
+    }
   }
 ]
