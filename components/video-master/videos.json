@@ -2712,5 +2712,21 @@
     "meta": {
       "created": "2nd November 2022"
     }
+  },
+  {
+    "name": "32nd Sunday in Ordinary Time - Yr C - In God's sight all things are alive",
+    "thumbnail": "/src/img/20221106-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "767638123",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221106-0",
+      "tags": "all souls' day"
+    },
+    "meta": {
+      "created": "6th November 2022"
+    }
   }
 ]
