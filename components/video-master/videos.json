@@ -2728,5 +2728,21 @@
     "meta": {
       "created": "6th November 2022"
     }
+  },
+  {
+    "name": "33rd Sunday in Ordinary Time - Yr C - Destruction of the Temple",
+    "thumbnail": "/src/img/20221113-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "769958358",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221113-0",
+      "tags": "all souls' day"
+    },
+    "meta": {
+      "created": "13th November 2022"
+    }
   }
 ]
