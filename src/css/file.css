@@ -49,7 +49,7 @@
   --text: #222;
   --background: #e6dbea;
   --background-transparency: rgba(218, 217, 223, 0);
-  --background-2: #eee;
+  --background-2: #f8ebfd;
   --dark: #666;
   --light: #fff;
 }
@@ -61,7 +61,7 @@
     --text: #eee;
     --background: #272430;
     --background-transparency: rgba(36, 39, 48, 0);
-    --background-2: #222;
+    --background-2: #1c171e;
     --dark: #000;
     --light: #5a5a5a;
   }
@@ -70,7 +70,7 @@
     --text: #222;
     --background: #e6dbea;
     --background-transparency: rgba(218, 217, 223, 0);
-    --background-2: #eee;
+    --background-2: #f8ebfd;
     --dark: #666;
     --light: #fff;
   }
@@ -80,13 +80,13 @@
   --text: #eee;
   --background: #272430;
   --background-transparency: rgba(36, 39, 48, 0);
-  --background-2: #222;
+  --background-2: #1c171e;
   --dark: #000;
   --light: #5a5a5a;
 }
 
 body {
-  font-family:  'Lato', 'Helvetica', Arial, "Font Awesome 5 Free";
+  font-family: 'Lato', 'Helvetica', Arial, "Font Awesome 5 Free";
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -504,12 +504,13 @@ m {
 /* END SUBSCRIBE BLOCK */
 
 .btn {
-  display: inline-grid;
+  display: inline-flex;
   text-align: center;
   padding: .7rem 1.3rem;
   position: relative;
   border-radius: 3px;
-  grid-template-columns: repeat(3, auto);
+  flex-direction: row;
+  gap: 4px;
   align-items: center;
   margin: auto;
   background: var(--background-2);
@@ -602,11 +603,11 @@ m {
   flex-wrap: wrap;
   margin-top: 4rem;
   justify-content: center;
-  gap:50px;
+  gap: 50px;
 }
 
 @media (min-width:1400px) {
-  #carousel{
+  #carousel {
     width: 100vw;
     max-width: 90vw;
     margin-left: 50%;
@@ -767,8 +768,8 @@ m {
 /* END CAROUSEL */
 
 .video-page-h1 {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin: 0 auto;
+  max-width: 90vw;
 }
 
 @media (max-width: 450px) {
@@ -873,25 +874,25 @@ video#videoEmbed {
   padding: .75rem;
   font-size: 1rem;
   transition: .3s ease;
-  box-shadow: inset 0px 0px 0px 3px var(--medium-grey);
+  /* box-shadow: inset 0px 0px 0px 3px var(--medium-grey); */
   cursor: pointer;
   grid-row: 1/2;
   text-align: center;
-  background-color: var(--medium-grey);
+  /* background-color: var(--medium-grey); */
   color: var(--white);
   margin-bottom: auto;
   margin-right: 4px;
 }
 
 .accordian-trigger-span:hover, .accordian-trigger-span-:hover {
-  background: var(--light-crimson) !important;
-  box-shadow: none;
-  color: #fff;
+  color: var(--light-crimson) !important;
+  /* box-shadow: none; */
+  /* color: #fff; */
 }
 
 .accordian-trigger-span.open, .accordian-trigger-span.open:hover {
-  background: var(--crimson) !important;
-  box-shadow: inset 0 0 0 3px var(--crimson);
+  color: var(--crimson) !important;
+  /* box-shadow: inset 0 0 0 3px var(--crimson); */
 }
 
 .accordian-payload.open {
@@ -899,11 +900,24 @@ video#videoEmbed {
   transform: translateY(0);
   opacity: 1;
   padding: 2rem;
-  box-shadow: 0 0 0 2px var(--crimson);
+  /* box-shadow: 0 0 0 2px var(--crimson); */
   border-radius: 3px;
   margin-right: auto;
   display: block;
   max-width: 90vw;
+  position: relative;
+}
+
+.accordian-payload.open::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: var(--background-2);
 }
 
 .accordian-payload {
@@ -925,6 +939,15 @@ video#videoEmbed {
   flex-direction: row;
   margin-top: 1rem;
   flex-wrap: wrap;
+  margin: 1rem auto 0 auto;
+  max-width: 90vw;
+}
+
+#playlistControl,
+.video-page-date {
+  margin: 0 auto .5rem auto;
+  max-width: 90vw;
+  display: block;
 }
 
 .spacer {
@@ -937,7 +960,7 @@ video#videoEmbed {
 }
 
 #shareLinks::before {
-  content: "Spread this Meditation around";
+  content: "Share online";
   font-size: 14px;
   display: inline-block;
   margin: auto;
@@ -1218,12 +1241,12 @@ video#videoEmbed {
   }
 
   #carousel {
-    justify-content: center;
+    gap: 0px;
   }
 
   #carousel>a>i {
-    max-width: 80vw;
-    max-height: 80vw;
+    max-width: 90vw;
+    max-height: 90vw;
     width: 400px;
     height: 200px;
   }
@@ -1234,10 +1257,10 @@ video#videoEmbed {
   }
 
   #carousel>a {
-    margin: 2rem .5rem;
-    max-width: 80vw;
+    margin: 1rem .5rem;
+    max-width: 90vw;
     width: 400px;
-    box-shadow: 0 1.25rem 1.25rem -.75rem var(--dark);
+    box-shadow: 0;
     display: grid;
     grid-auto-flow: row;
   }
