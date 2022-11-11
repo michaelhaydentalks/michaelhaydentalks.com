@@ -86,7 +86,7 @@
 }
 
 body {
-  font-family:  'Lato', 'Helvetica', Arial, "Font Awesome 5 Free";
+  font-family: 'Lato', 'Helvetica', Arial, "Font Awesome 5 Free";
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -510,7 +510,7 @@ m {
   position: relative;
   border-radius: 3px;
   flex-direction: row;
-  gap:4px;
+  gap: 4px;
   align-items: center;
   margin: auto;
   background: var(--background-2);
@@ -603,11 +603,11 @@ m {
   flex-wrap: wrap;
   margin-top: 4rem;
   justify-content: center;
-  gap:50px;
+  gap: 50px;
 }
 
 @media (min-width:1400px) {
-  #carousel{
+  #carousel {
     width: 100vw;
     max-width: 90vw;
     margin-left: 50%;
@@ -909,14 +909,14 @@ video#videoEmbed {
 }
 
 .accordian-payload.open::before {
-  content:'';
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
   display: block;
   z-index: -1;
-top: 0;
-left: 0;
+  top: 0;
+  left: 0;
   background-color: var(--background-2);
 }
 
@@ -940,15 +940,14 @@ left: 0;
   margin-top: 1rem;
   flex-wrap: wrap;
   margin: 1rem auto 0 auto;
-max-width: 90vw;
+  max-width: 90vw;
 }
 
 #playlistControl,
-.video-page-date
- {
+.video-page-date {
   margin: 0 auto .5rem auto;
   max-width: 90vw;
-  display:block;
+  display: block;
 }
 
 .spacer {
