@@ -2691,7 +2691,7 @@
     "details": {
       "type": "file",
       "path": "20221101-0",
-      "tags": ""
+      "tags": "all saints day"
     },
     "meta": {
       "created": "1st November 2022"
@@ -2723,7 +2723,7 @@
     "details": {
       "type": "file",
       "path": "20221106-0",
-      "tags": "all souls' day"
+      "tags": ""
     },
     "meta": {
       "created": "6th November 2022"
@@ -2739,10 +2739,26 @@
     "details": {
       "type": "file",
       "path": "20221113-0",
-      "tags": "all souls' day"
+      "tags": ""
     },
     "meta": {
       "created": "13th November 2022"
+    }
+  },
+  {
+    "name": "Feast of Saint Laurence O'Toole - Irish Saint",
+    "thumbnail": "/src/img/20221114-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "770244454",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221114-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "14th November 2022"
     }
   }
 ]
