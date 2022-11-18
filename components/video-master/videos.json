@@ -2760,5 +2760,21 @@
     "meta": {
       "created": "14th November 2022"
     }
+  },
+  {
+    "name": "Solemnity of Christ the King - Yr C - This day you will be with me in Paradise",
+    "thumbnail": "/src/img/20221120-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "772423239",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221120-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "20th November 2022"
+    }
   }
 ]
