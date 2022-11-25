@@ -2776,5 +2776,21 @@
     "meta": {
       "created": "20th November 2022"
     }
+  },
+  {
+    "name": "1st Sunday of Advent - Yr A - The virtuous will gain eternal life",
+    "thumbnail": "/src/img/20221127-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "775190329",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221127-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "27th November 2022"
+    }
   }
 ]
