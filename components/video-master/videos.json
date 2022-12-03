@@ -2792,5 +2792,21 @@
     "meta": {
       "created": "27th November 2022"
     }
+  },
+  {
+    "name": "2nd Sunday of Advent - Yr A - The kingdom is at hand - be ready to embrace it",
+    "thumbnail": "/src/img/20221204-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "777519141",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221204-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "4th December 2022"
+    }
   }
-]
+] 
