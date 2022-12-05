@@ -2808,5 +2808,21 @@
     "meta": {
       "created": "4th December 2022"
     }
+  },
+  {
+    "name": "The Feast of St Nicholas - (Bishop)",
+    "thumbnail": "/src/img/20221206-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "778068678",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221206-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "6th December 2022"
+    }
   }
 ] 
