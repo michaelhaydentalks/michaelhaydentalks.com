@@ -2824,5 +2824,21 @@
     "meta": {
       "created": "6th December 2022"
     }
+  },
+  {
+    "name": "The Feast of the Immaculate Conception of the Blessed Virgin Mary - Rejoice greatly in the Lord",
+    "thumbnail": "/src/img/20221208-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "779040297",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221208-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "8th December 2022"
+    }
   }
 ] 
