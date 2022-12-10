@@ -28,7 +28,7 @@ function cleanDirURL(obj) {
   let day = dateStr[0].replace(/\D/g, '') > 9 ? dateStr[0].replace(/\D/g, '') : String("0" + dateStr[0].replace(/\D/g, ''))
   dateStr = `${dateStr[2]}-${months[dateStr[1].toLowerCase()]}-${day}T00:00:00.00Z`
   dateStr = new Date(dateStr) / 1000
-  return obj.name.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~").replace(/?/g, "%3F") + "-" + dateStr
+  return obj.name.replace(/ /g, "+").replace(/,/g, "_").replace(/'/g, "~").replace(/"/g, "~").replace(/\?/g, "%3F") + "-" + dateStr
 
 }
 
