@@ -2840,5 +2840,21 @@
     "meta": {
       "created": "8th December 2022"
     }
+  },
+  {
+    "name": "Be happy - but what is the source of our happiness? - 3rd Sunday of Advent Year A",
+    "thumbnail": "/src/img/20221211-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "779872861",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221211-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "11th December 2022"
+    }
   }
 ] 
