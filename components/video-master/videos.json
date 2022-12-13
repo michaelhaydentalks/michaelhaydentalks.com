@@ -2856,5 +2856,21 @@
     "meta": {
       "created": "11th December 2022"
     }
+  },
+  {
+    "name": "The Story of Saint Juan Diego and Our Lady of Guadeloupe",
+    "thumbnail": "/src/img/20221214-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "780922261",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221214-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "12th December 2022"
+    }
   }
 ] 
