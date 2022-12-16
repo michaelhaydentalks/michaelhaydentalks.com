@@ -2872,5 +2872,21 @@
     "meta": {
       "created": "12th December 2022"
     }
+  },
+  {
+    "name": "Loneliness - It is strange to be so universally known and yet be so lonely",
+    "thumbnail": "/src/img/20221216-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "781702199",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221216-0",
+      "tags": "Albert Einstein"
+    },
+    "meta": {
+      "created": "16th December 2022"
+    }
   }
 ] 
