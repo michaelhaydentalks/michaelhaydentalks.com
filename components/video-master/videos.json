@@ -2888,5 +2888,21 @@
     "meta": {
       "created": "16th December 2022"
     }
+  },
+  {
+    "name": "Emmanuel- a name meaning God is with us - 4th Sunday of Advent Year A",
+    "thumbnail": "/src/img/20221218-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "781998708",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221218-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "18th December 2022"
+    }
   }
 ] 
