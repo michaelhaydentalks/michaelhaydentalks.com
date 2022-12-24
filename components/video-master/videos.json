@@ -2904,5 +2904,21 @@
     "meta": {
       "created": "18th December 2022"
     }
+  },
+  {
+    "name": "The True Spirit of Christmas - Year A",
+    "thumbnail": "/src/img/20221225-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "784122353",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20221225-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "25th December 2022"
+    }
   }
 ] 
