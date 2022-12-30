@@ -52,7 +52,7 @@ function carousel(balance) {
   for (i = window.videoCount - 1; i < window.videoCount + (increaseBy-1); i++) {
     let link = document.createElement('a')
     if (window.videos[i]) {
-      link.href = window.videos[i].url
+      link.href = "/video/"+window.videos[i].url
       let thumbnail = window.videos[i].thumbnail
       let name = window.videos[i].name
       let created = window.videos[i].created
