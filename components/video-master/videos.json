@@ -2936,5 +2936,21 @@
     "meta": {
       "created": "1st January 2023"
     }
+  },
+  {
+    "name": "Jesus is presented to the world - Epiphany of the Lord - Year A",
+    "thumbnail": "/src/img/20230106-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "786705418",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230106-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "6th January 2023"
+    }
   }
 ]
