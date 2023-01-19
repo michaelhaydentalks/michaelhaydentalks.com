@@ -2982,7 +2982,23 @@
       "tags": ""
     },
     "meta": {
-      "created": "21sh January 2023"
+      "created": "21st January 2023"
+    }
+  },
+  {
+    "name": "Jesus in Galilee preaching and calling his first disciples - 3rd Sunday in Ordinary Time - Year A",
+    "thumbnail": "/src/img/20230122-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "790807642",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230122-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "22nd January 2023"
     }
   }
 ]
