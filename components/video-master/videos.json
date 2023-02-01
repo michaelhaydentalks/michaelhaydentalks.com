@@ -3032,5 +3032,21 @@
     "meta": {
       "created": "31st January 2023"
     }
+  },
+  {
+    "name": "Jesus is taken to the Temple - The Presentation of the Lord",
+    "thumbnail": "/src/img/20230202-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "795006120",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230202-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "2nd February 2023"
+    }
   }
 ]
