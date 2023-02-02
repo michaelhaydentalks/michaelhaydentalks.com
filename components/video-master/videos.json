@@ -3048,5 +3048,21 @@
     "meta": {
       "created": "2nd February 2023"
     }
+  },
+  {
+    "name": "Light of the World - 5th Sunday in Ordinary Time - Year A",
+    "thumbnail": "/src/img/20230205-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "795395847",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230205-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "5th February 2023"
+    }
   }
 ]
