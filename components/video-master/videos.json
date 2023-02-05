@@ -3064,5 +3064,21 @@
     "meta": {
       "created": "5th February 2023"
     }
+  },
+  {
+    "name": "From slave to saint - Saint Josephine Bakhita",
+    "thumbnail": "/src/img/20230208-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "796048195",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230208-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "8th February 2023"
+    }
   }
 ]
