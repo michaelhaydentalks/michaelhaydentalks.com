@@ -3128,5 +3128,21 @@
     "meta": {
       "created": "22nd February 2023"
     }
+  },
+  {
+    "name": "Come back to me with all your heart - don't let fear keep us apart - First Sunday of Lent - Year A",
+    "thumbnail": "/src/img/20230226-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "800709499",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230226-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "26th February 2023"
+    }
   }
 ]
