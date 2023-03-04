@@ -3130,7 +3130,7 @@
     }
   },
   {
-    "name": "Come back to me with all your heart - don't let fear keep us apart - First Sunday of Lent - Year A",
+    "name": "We are the children of God - Second Sunday of Lent - Year A",
     "thumbnail": "/src/img/20230226-0.jpg",
     "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
     "vimeo": "802157884",
@@ -3143,6 +3143,22 @@
     },
     "meta": {
       "created": "26th February 2023"
+    }
+  },
+  {
+    "name": "We are the children of God - Second Sunday of Lent - Year A",
+    "thumbnail": "/src/img/20230305-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "804645712",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230305-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "5th March 2023"
     }
   }
 ]
