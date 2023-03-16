@@ -3176,5 +3176,21 @@
     "meta": {
       "created": "12th March 2023"
     }
+  },
+  {
+    "name": "Feast of St Patrick of Ireland - Yr C - la feile Naomh Padraig",
+    "thumbnail": "/src/img/20230317-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "808766598",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230317-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "17th March 2023"
+    }
   }
 ]
