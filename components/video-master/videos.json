@@ -3192,5 +3192,21 @@
     "meta": {
       "created": "17th March 2023"
     }
+  },
+  {
+    "name": "I was blind but now I see - Fourth Sunday of Lent - Year A",
+    "thumbnail": "/src/img/20230319-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "809338819",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230319-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "19th March 2023"
+    }
   }
 ]
