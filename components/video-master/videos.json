@@ -3208,5 +3208,21 @@
     "meta": {
       "created": "19th March 2023"
     }
+  },
+  {
+    "name": "If we could die like St Joseph what a death - Feast of Saint Joseph",
+    "thumbnail": "/src/img/20230320-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "809500673",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230320-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "20th March 2023"
+    }
   }
 ]
