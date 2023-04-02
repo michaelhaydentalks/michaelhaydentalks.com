@@ -3256,5 +3256,21 @@
     "meta": {
       "created": "26th March 2023"
     }
+  },
+  {
+    "name": "Jesus enters Jerusalem - Palm Sunday -  Year A",
+    "thumbnail": "/src/img/20230402-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "811625769",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230402-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "2nd April 2023"
+    }
   }
 ]
