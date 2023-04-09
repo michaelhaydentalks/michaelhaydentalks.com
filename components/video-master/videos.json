@@ -3304,5 +3304,21 @@
     "meta": {
       "created": "7th April 2023"
     }
+  },
+  {
+    "name": "Day of Resurrection - Easter Sunday - Year A",
+    "thumbnail": "/src/img/20230409-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "815957674",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230409-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "9th April 2023"
+    }
   }
 ]
