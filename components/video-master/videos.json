@@ -3320,5 +3320,21 @@
     "meta": {
       "created": "9th April 2023"
     }
+  },
+  {
+    "name": "Jesus I trust in you - Divine Mercy Sunday",
+    "thumbnail": "/src/img/20230416-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "817822868",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230416-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "16th April 2023"
+    }
   }
 ]
