@@ -3352,5 +3352,21 @@
     "meta": {
       "created": "21st April 2023"
     }
+  },
+  {
+    "name": "Known by the breaking of bread - Third Sunday of Easter - Year A",
+    "thumbnail": "/src/img/20230423-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "820156186",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230423-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "23rd April 2023"
+    }
   }
 ]
