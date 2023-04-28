@@ -3384,5 +3384,21 @@
     "meta": {
       "created": "25th April 2023"
     }
+  },
+  {
+    "name": "I am the Good Shepherd, I am the Gate, no other way - Fourth Sunday of Easter - Year A",
+    "thumbnail": "/src/img/20230430-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "821873471",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230430-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "30th April 2023"
+    }
   }
 ]
