@@ -3400,5 +3400,21 @@
     "meta": {
       "created": "30th April 2023"
     }
+  },
+  {
+    "name": "A strong silent man who did Gods will - St Joseph the worker",
+    "thumbnail": "/src/img/20230501-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "822557867",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230501-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "1st May 2023"
+    }
   }
 ]
