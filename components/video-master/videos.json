@@ -3416,5 +3416,21 @@
     "meta": {
       "created": "1st May 2023"
     }
+  },
+  {
+    "name": "Trust in God -- Trust in me - Fifth Sunday of Easter - Year A",
+    "thumbnail": "/src/img/20230507-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "824268463",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230507-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "7th May 2023"
+    }
   }
 ]
