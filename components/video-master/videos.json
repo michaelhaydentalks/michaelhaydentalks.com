@@ -3448,5 +3448,21 @@
     "meta": {
       "created": "13th May 2023"
     }
+  },
+  {
+    "name": "Love is His Word - Love is His way - Sixth Sunday of Easter - Year A",
+    "thumbnail": "/src/img/20230514-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "826513212",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230514-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "14th May 2023"
+    }
   }
 ]
