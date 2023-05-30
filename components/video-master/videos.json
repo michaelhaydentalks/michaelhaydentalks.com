@@ -3482,7 +3482,7 @@
     }
   },
   {
-    "name": " The promised spirit comes - The Spirit sets us on fire to proclaim the Word - Solemnity of Pentecost - Year A",
+    "name": "The promised spirit comes - The Spirit sets us on fire to proclaim the Word - Solemnity of Pentecost - Year A",
     "thumbnail": "/src/img/20230528-0.jpg",
     "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
     "vimeo": "830726821",
@@ -3495,6 +3495,22 @@
     },
     "meta": {
       "created": "28th May 2023"
+    }
+  },
+  {
+    "name": "Of all women you are most blessed - Feast of the Visitation of the Blessed Virgin Mary",
+    "thumbnail": "/src/img/20230531-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "831693064",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230531-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "31st May 2023"
     }
   }
 ]
