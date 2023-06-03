@@ -3512,5 +3512,21 @@
     "meta": {
       "created": "31st May 2023"
     }
+  },
+  {
+    "name": "Praise the Trinity - Feast of the Most Holy Trinity",
+    "thumbnail": "/src/img/20230604-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "832948504",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230604-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "4th June 2023"
+    }
   }
 ]
