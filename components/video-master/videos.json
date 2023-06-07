@@ -3528,5 +3528,21 @@
     "meta": {
       "created": "4th June 2023"
     }
+  },
+  {
+    "name": "I am the bread of life - eat of me and live - Corpus Christi - Body of Christ",
+    "thumbnail": "/src/img/20230608-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "834019660",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230608-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "8th June 2023"
+    }
   }
 ]
