@@ -3560,5 +3560,21 @@
     "meta": {
       "created": "11th June 2023"
     }
+  },
+  {
+    "name": "Saint Anthony of Padua - Priest and Doctor of the Church",
+    "thumbnail": "/src/img/20230613-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "835451540",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230613-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "13th June 2023"
+    }
   }
 ]
