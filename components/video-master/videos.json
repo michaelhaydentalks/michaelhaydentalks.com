@@ -3576,5 +3576,21 @@
     "meta": {
       "created": "13th June 2023"
     }
+  },
+  {
+    "name": "Sacred Hearts of Jesus and Mary",
+    "thumbnail": "/src/img/20230616-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "836995492",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230616-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "16th June 2023"
+    }
   }
 ]
