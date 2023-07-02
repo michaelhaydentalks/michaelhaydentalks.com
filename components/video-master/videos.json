@@ -3672,5 +3672,21 @@
     "meta": {
       "created": "2nd July 2023"
     }
+  },
+  {
+    "name": "Double no longer but believe - St Thomas Apostle - Year A",
+    "thumbnail": "/src/img/20230703-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "841687983",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230703-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "3rd July 2023"
+    }
   }
 ]
