@@ -3688,5 +3688,21 @@
     "meta": {
       "created": "3rd July 2023"
     }
+  },
+  {
+    "name": "A true labourer in the Vineyard - Saint Anthony Mary Zachariah - Year A",
+    "thumbnail": "/src/img/20230705-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "842481240",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230705-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "5th July 2023"
+    }
   }
 ]
