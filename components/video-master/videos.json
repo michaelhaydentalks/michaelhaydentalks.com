@@ -3720,5 +3720,21 @@
     "meta": {
       "created": "9th July 2023"
     }
+  },
+  {
+    "name": "St Camillus de Lellis - Patron Saint of the Sick",
+    "thumbnail": "/src/img/20230714-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "845174287",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230714-0",
+      "tags": "patron saint of the sick, naples, giacomo hospital, italian saint"
+    },
+    "meta": {
+      "created": "14th July 2023"
+    }
   }
 ]
