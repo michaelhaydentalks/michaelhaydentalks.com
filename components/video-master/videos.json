@@ -3752,5 +3752,21 @@
     "meta": {
       "created": "16th July 2023"
     }
+  },
+  {
+    "name": "St Mary Magdalene",
+    "thumbnail": "/src/img/20230722-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "847472726",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230722-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "22 July 2023"
+    }
   }
 ]
