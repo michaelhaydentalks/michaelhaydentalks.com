@@ -3784,5 +3784,21 @@
     "meta": {
       "created": "23 July 2023"
     }
+  },
+  {
+    "name": "St James Apostle",
+    "thumbnail": "/src/img/20230725-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "848204450",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230725-0",
+      "tags": "santiago de compostela, santiago, spain", st james the greater
+    },
+    "meta": {
+      "created": "25 July 2023"
+    }
   }
 ]
