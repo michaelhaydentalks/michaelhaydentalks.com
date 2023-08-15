@@ -3816,5 +3816,21 @@
     "meta": {
       "created": "13 August 2023"
     }
+  },
+  {
+    "name": "You have won Gods favour - Assumption of Our Lady into heaven",
+    "thumbnail": "/src/img/20230815-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "854535716",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230815-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "15 August 2023"
+    }
   }
 ]
