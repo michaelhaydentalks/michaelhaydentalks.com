@@ -3848,5 +3848,21 @@
     "meta": {
       "created": "20 August 2023"
     }
+  },
+  {
+    "name": "St Bartholomew Apostle and Martyr",
+    "thumbnail": "/src/img/20230824-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "857390339",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230824-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "24 August 2023"
+    }
   }
 ]
