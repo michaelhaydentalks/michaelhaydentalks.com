@@ -3880,5 +3880,21 @@
     "meta": {
       "created": "27 August 2023"
     }
+  },
+  {
+    "name": "Twenty-second Sunday in Ordinary Time",
+    "thumbnail": "/src/img/20230903-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "860538198",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230903-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "03 September 2023"
+    }
   }
 ]
