@@ -3896,5 +3896,21 @@
     "meta": {
       "created": "3 September 2023"
     }
+  },
+  {
+    "name": "Its all Gods work - The Nativity of our Blessed Lady",
+    "thumbnail": "/src/img/20230908-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "862218675",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230908-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "8 September 2023"
+    }
   }
 ]
