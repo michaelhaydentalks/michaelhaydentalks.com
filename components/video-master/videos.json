@@ -3912,5 +3912,21 @@
     "meta": {
       "created": "8 September 2023"
     }
+  },
+  {
+    "name": "Twenty-Third Sunday in Ordinary Time",
+    "thumbnail": "/src/img/20230910-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "862670613",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230910-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "10 September 2023"
+    }
   }
 ]
