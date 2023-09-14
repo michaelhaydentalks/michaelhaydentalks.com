@@ -3928,5 +3928,21 @@
     "meta": {
       "created": "10 September 2023"
     }
+  },
+  {
+    "name": "Because of your Holy Cross you redeemed the world - Exultation of the Holy Cross",
+    "thumbnail": "/src/img/20230914-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "864239909",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230914-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "14 September 2023"
+    }
   }
 ]
