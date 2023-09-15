@@ -3944,5 +3944,21 @@
     "meta": {
       "created": "14 September 2023"
     }
+  },
+  {
+    "name": "At the cross her station keeping stood Our Lady weeping - Our Lady of Sorrows",
+    "thumbnail": "/src/img/20230915-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "864659112",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230915-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "15 September 2023"
+    }
   }
 ]
