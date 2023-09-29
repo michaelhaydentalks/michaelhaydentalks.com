@@ -4008,5 +4008,21 @@
     "meta": {
       "created": "24 September 2023"
     }
+  },
+  {
+    "name": "Archangels - Saints Michael - Gabriel - Raphael",
+    "thumbnail": "/src/img/20230929-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "869423458",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20230929-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "29 September 2023"
+    }
   }
 ]
