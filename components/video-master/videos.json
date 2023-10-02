@@ -4040,5 +4040,21 @@
     "meta": {
       "created": "1 October 2023"
     }
+  },
+  {
+    "name": "Feast of our angel guardian",
+    "thumbnail": "/src/img/20231002-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "870171076",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20231002-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "2 October 2023"
+    }
   }
 ]
