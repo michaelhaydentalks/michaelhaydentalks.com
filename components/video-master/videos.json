@@ -4072,5 +4072,21 @@
     "meta": {
       "created": "7 October 2023"
     }
+  },
+  {
+    "name": "Twenty-Seventh Sunday in Ordinary Time",
+    "thumbnail": "/src/img/20231008-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "872175176",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20231008-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "8 October 2023"
+    }
   }
 ]
