@@ -4056,5 +4056,21 @@
     "meta": {
       "created": "2 October 2023"
     }
+  },
+  {
+    "name": "Feast of Our Lady of the Rosary",
+    "thumbnail": "/src/img/20231007-0.jpg",
+    "raw__": "remove '__' to enable this with '/src/video/videoName' without extension",
+    "vimeo": "872163650",
+    "hash": "",
+    "description": "",
+    "details": {
+      "type": "file",
+      "path": "20231007-0",
+      "tags": ""
+    },
+    "meta": {
+      "created": "7 October 2023"
+    }
   }
 ]
